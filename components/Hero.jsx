@@ -51,7 +51,7 @@ const Hero = ({ targetDate }) => {
             <div className="flex items-center justify-center flex-1 w-full max-w-lg py-12 md:w-4/6 md:mx-auto lg:absolute lg:py-0 lg:w-full lg:h-full lg:p-0 lg:left-1/2 lg:-ml-64 lg:-mt-16">
                 <div className="flex flex-col gap-4 xsm:gap-16">
                     <div className="flex items-center w-full gap-2">
-                        <div className="flex items-center justify-center w-12 p-2 pl-3 overflow-hidden bg-white rounded-full xsm:w-16 md:w-20">
+                        <div className="flex items-center justify-center w-12 p-2 pl-3 overflow-hidden bg-white rounded-full xsm:w-16 md:w-20 lg:w-28">
                             <Image
                                 src="/logo.png"
                                 alt="Travel Jinni logo"
