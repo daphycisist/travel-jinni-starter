@@ -49,9 +49,10 @@ const Navbar = ({ targetDate }) => {
     }, []);
 
     return (
-        <nav className="flex flex-col-reverse justify-between gap-4 px-1 py-2">
-            <div className="m-auto">
-                <div className="flex ">
+        <nav className="flex flex-col-reverse justify-between gap-4 px-1 py-2 xsm:px-5 md:flex-row md:w-11/12 md:mx-auto">
+            <div className="md:m-0">
+                <p className="text-sm">Remaining Days to my Trip</p>
+                <div className="flex md:gap-3 ">
                     <CountdownTime time={timer.weeks} timeUnit="Weeks" />
                     <CountdownTime time={timer.days} timeUnit="Days" />
                     <CountdownTime time={timer.hours} timeUnit="Hours" />
@@ -59,8 +60,8 @@ const Navbar = ({ targetDate }) => {
                     <CountdownTime time={timer.seconds} timeUnit="Seconds" />
                 </div>
             </div>
-            <div className="flex items-center justify-end gap-2 text-xs">
-                <span className="after:h-5 after:w-1 after-bg-white">My Trips</span>
+            <div className="flex items-center justify-end gap-2 text-xs xsm:text-sm md:gap-4 md:text-base">
+                <span>My Trips</span>
                 <span>|</span>
                 <div className="flex items-center gap-1">
                     <span className="w-5 h-5">
@@ -81,7 +82,7 @@ const Navbar = ({ targetDate }) => {
 };
 
 Navbar.propTypes = {
-    target: PropTypes.string
+    targetDate: PropTypes.string
 };
 
 export default Navbar;

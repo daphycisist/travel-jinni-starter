@@ -6,10 +6,10 @@ const TripDate = ({ active, date, handleActive }) => {
             role="none"
             onKeyDown={handleActive}
             onClick={handleActive}
-            className={`flex items-center justify-center text-xs cursor-pointer ${
+            className={`flex items-center justify-center text-xs cursor-pointer xsm:text-base md:text-xl p-4 ${
                 active
-                    ? 'font-mono text-sm font-bold h-8 w-8 md:w-8 text-yellow-300 bg-black bg-opacity-50 border-2 border-yellow-300 rounded-full gap-1'
-                    : 'w-10 h-10 '
+                    ? 'font-mono text-sm font-bold h-8 w-8 md:w-10 md:h-10 text-yellow-300 bg-black bg-opacity-50 border-2 border-yellow-300 rounded-full gap-1'
+                    : 'w-10 h-10'
             }`}>
             {date}
         </span>

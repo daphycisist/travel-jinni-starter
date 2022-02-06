@@ -8,6 +8,7 @@ module.exports = {
             },
             backgroundImage: {
                 'hero': "url('/bgimage.png')",
+                'logo': "url('/logo.png')",
                 'footer-texture': "url('/img/footer-texture.png')"
             },
             backgroundColor: {
@@ -16,6 +17,12 @@ module.exports = {
             fontSize: {
                 'base-xs': '0.6rem',
                 'base-small': '0.65rem'
+            },
+            padding: {
+                hero: '30%'
+            },
+            screens: {
+                xsm: [{ min: '390px', max: '639px' }]
             }
         }
     },
