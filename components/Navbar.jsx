@@ -49,7 +49,7 @@ const Navbar = ({ targetDate }) => {
     }, []);
 
     return (
-        <nav className="flex flex-col-reverse justify-between gap-4 px-1 py-2 xsm:px-5 md:flex-row md:w-11/12 md:mx-auto">
+        <nav className="flex flex-col-reverse justify-between gap-4 px-1 py-2 xsm:px-5 md:flex-row md:w-11/12 md:mx-auto lg:pt-4 lg:w-full lg:pl-20 lg:pr-12">
             <div className="md:m-0">
                 <p className="text-sm">Remaining Days to my Trip</p>
                 <div className="flex md:gap-3 ">

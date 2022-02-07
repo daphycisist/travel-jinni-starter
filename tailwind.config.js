@@ -16,7 +16,8 @@ module.exports = {
             },
             fontSize: {
                 'base-xs': '0.6rem',
-                'base-small': '0.65rem'
+                'base-small': '0.65rem',
+                '2.5xl': '1.75rem'
             },
             padding: {
                 hero: '30%'
