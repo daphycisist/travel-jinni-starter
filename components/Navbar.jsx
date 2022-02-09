@@ -53,11 +53,19 @@ const Navbar = ({ targetDate }) => {
             <div className="md:m-0">
                 <p className="text-sm">Remaining Days to my Trip</p>
                 <div className="flex md:gap-3 ">
-                    <CountdownTime time={timer.weeks} timeUnit="Weeks" />
-                    <CountdownTime time={timer.days} timeUnit="Days" />
-                    <CountdownTime time={timer.hours} timeUnit="Hours" />
-                    <CountdownTime time={timer.minutes} timeUnit="Minutes" />
-                    <CountdownTime time={timer.seconds} timeUnit="Seconds" />
+                    <CountdownTime data-testid="countdown" time={timer.weeks} timeUnit="Weeks" />
+                    <CountdownTime data-testid="countdown" time={timer.days} timeUnit="Days" />
+                    <CountdownTime data-testid="countdown" time={timer.hours} timeUnit="Hours" />
+                    <CountdownTime
+                        data-test-id="countdown"
+                        time={timer.minutes}
+                        timeUnit="Minutes"
+                    />
+                    <CountdownTime
+                        data-testid="countdown"
+                        time={timer.seconds}
+                        timeUnit="Seconds"
+                    />
                 </div>
             </div>
             <div className="flex items-center justify-end gap-2 text-xs xsm:text-sm md:gap-4 md:text-base">

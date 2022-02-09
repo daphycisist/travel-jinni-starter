@@ -7,9 +7,8 @@ module.exports = {
                 'jini-yellow-100': 'rgb(255, 211, 77)'
             },
             backgroundImage: {
-                'hero': "url('/bgimage.png')",
-                'logo': "url('/logo.png')",
-                'footer-texture': "url('/img/footer-texture.png')"
+                hero: "url('/bgimage.png')",
+                logo: "url('/logo.png')"
             },
             backgroundColor: {
                 'hero-mask': 'rgba(0, 0, 0, 0.466)'
